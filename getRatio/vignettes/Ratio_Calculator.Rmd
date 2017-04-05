@@ -1,0 +1,25 @@
+---
+title: "getRatio"
+author: "Alexandra Emmons"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{"getRatio"}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+#Introduction
+This package is meant to be used in conjunction with a data frame with two or more columns. This package contains only one function that can be used to create a ratio of two columns, dividing each row of one column by the other, and subsequently creating a new column.)
+
+#Package Remote
+A remote repository for this package can be found on GitHub.
+https://github.com/aemmons90/Task_09.git
+
+#Uses
+Imagine having a data frame called "Bone" with two columns "Bacterial.DNA" and "Human.DNA." You want to divide the first column by the second to get a ratio of Bacterial.DNA to Human.DNA, and you want this new ratio DNA to be in a new column that you name "HuBac". You would use as follows:
+```{r}
+library(getRatio)
+
+getRatio(Bone, "Bacterial.DNA", "Human.DNA", "HuBac")
+```
+

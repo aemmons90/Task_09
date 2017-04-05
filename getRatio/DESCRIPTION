@@ -1,0 +1,14 @@
+Package: getRatio
+Title: What the Package Does (Divides two columns of a data frame and creates a new column as the output)
+Version: 0.0.0.9000
+Authors@R: person("Alexandra", "Emmons", email = "aemmons@vols.utk.edu", role = c("aut", "cre"))
+Description: What the package does (This package is meant to be used in conjunction with a data frame with two or more columns. This package contains only one function that can be used to create a ratio of two columns by dividing one column by the other and creating a new column.).
+Depends: R (>= 3.3.2)
+License: What license is it under? BSD
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
+Suggests: knitr,
+    rmarkdown,
+    testthat
+VignetteBuilder: knitr
